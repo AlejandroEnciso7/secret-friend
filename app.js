@@ -32,6 +32,7 @@ function mostrarListaAmigo() {
 
     let deleteButton = document.createElement("button");
     deleteButton.textContent = "Eliminar";
+    deleteButton.classList.add("delete-button");
     deleteButton.onclick = function() {
       amigos.splice(index, 1);
       mostrarListaAmigo();
